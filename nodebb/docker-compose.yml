@@ -1,0 +1,11 @@
+services:
+  nodebb:
+    image: ntutselab/nodebb_with_coverage
+    ports:
+      - "3101:4567"
+    links:
+      - mongodb
+    environment:
+      - MONGO_HOST=mongodb
+  mongodb:
+    image: ntutselab/mongo

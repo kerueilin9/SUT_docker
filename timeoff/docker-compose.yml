@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  timeoff_management_with_coverage:
+    image: ntutselab/timeoff_management_with_coverage
+    container_name: timeoff_management
+    ports:
+      - "127.0.0.1:3102:3000"
+    restart: unless-stopped

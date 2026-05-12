@@ -1,0 +1,13 @@
+services:
+  keystonejs_with_coverage:
+    image: ntutselab/keystonejs_with_coverage
+    ports:
+      - '3100:3000'
+    links:
+      - nameOfMongoDB
+    environment:
+      - MONGO_URI=mongodb://nameOfMongoDB:27017/
+  nameOfMongoDB:
+    image: ntutselab/mongo
+    ports:
+      - '27017:27017'
