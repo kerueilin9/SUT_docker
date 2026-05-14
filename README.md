@@ -35,7 +35,7 @@ cd .\onestopshop\ && docker-compose up -d && cd ..
 |onestopshop|     --------     |  --------  |
 | agilefant |      admin       |   123456   |
 |  timeoff  |  secret@126.com  |   123456   |
-|  gadael   |  secret@126.com  |   secret   |
+|  gadael   |  --------------  |   ------   |
 | parabank  |  john/parasoft   |    demo    |
 | Realworld |                  |            |
 | 4gaBoards |  demo@demo.com   |  Demodemo  |
