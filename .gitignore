@@ -58,3 +58,6 @@ JACOCO/jacoco/backups/
 # Local Docker image archives
 SUT/*.tar
 SUT/*.zip
+
+SUT/webrled
+

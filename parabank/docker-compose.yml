@@ -1,0 +1,10 @@
+services:
+  parabank:
+    image: parabank:latest
+    container_name: parabank-flask-container
+    stdin_open: true
+    tty: true
+    ports:
+      - "6969:6969"
+      - "3301:8080"
+    restart: unless-stopped

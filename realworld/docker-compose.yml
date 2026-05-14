@@ -1,0 +1,12 @@
+services:
+  realworld:
+    image: realworld:latest
+    container_name: realworld-container
+    entrypoint: ["/bin/bash"]
+    command: ["-lc", "yarn start"]
+    stdin_open: true
+    tty: true
+    ports:
+      - "3303:3000"
+      - "3001:3001"
+    restart: unless-stopped

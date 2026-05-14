@@ -1,0 +1,10 @@
+services:
+  gadael:
+    image: gadael:latest
+    container_name: gadael-flask-container
+    stdin_open: true
+    tty: true
+    ports:
+      - "6969:6969"
+      - "3000:3000"
+    restart: unless-stopped

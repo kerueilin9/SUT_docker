@@ -1,0 +1,11 @@
+services:
+  agilefant:
+    image: agilefant:latest
+    container_name: agilefant-flask-container
+    stdin_open: true
+    tty: true
+    ports:
+      - "6969:6969"
+      - "3302:8080"
+      - "3306:3306"
+    restart: unless-stopped

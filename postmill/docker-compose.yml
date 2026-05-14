@@ -1,0 +1,7 @@
+services:
+  postmill:
+    image: webarenaimages/postmill-populated-exposed-withimg:latest
+    container_name: postmill
+    ports:
+      - "3200:80"
+    restart: unless-stopped
