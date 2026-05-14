@@ -54,3 +54,7 @@ JACOCO/jacoco/report/
 JACOCO/jacoco/*.exec
 JACOCO/jacoco/backups/
 *.lcov
+
+# Local Docker image archives
+SUT/*.tar
+SUT/*.zip
